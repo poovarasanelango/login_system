@@ -1,0 +1,5 @@
+
+
+NODE PACKAGE:
+
+    npm i express mysql dotenv hbs nodemon bcryptjs cookie-parser jsonwebtoken

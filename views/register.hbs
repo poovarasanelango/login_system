@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+     {{> navbar}}
+
+    <div class="container2">
+        <h1>Register</h1>
+           {{#if msg}}
+      <p class="{{msg_type}}">{{msg}}</p>
+      {{/if}}
+        <form action="/auth/register" method="post">
+            <div class="field">
+                <label>Username</label>
+                <input type="text" name="name" placeholder="Enter the Username" >
+
+            </div>
+            <div class="field">
+                <label>Email Id</label>
+                <input type="email" name="email" placeholder="Enter the Email" >
+
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Enter the Password" >
+
+            </div>
+            <div class="field">
+                <label>Confirm Password</label>
+                <input type="password" name="confirm_password" placeholder="Enter the Confirm Password" >
+            </div>
+            <div class="fail">
+                <input type="submit" name="btn" value="Signup">
+            </div>
+            <p>Already a user?
+                <a href="/">Login</a>
+            </p>
+
+</body>
+
+</html>
